@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .quiz-container {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    h1 { text-align: center; color: #00d4ff; }
+    .question { margin-bottom: 15px; font-size: 18px; font-weight: 600; }
+    .options button {
+      display: block; width: 100%; padding: 12px; margin: 8px 0;
+      border: none; border-radius: 12px; background: #2a5298; color: #fff;
+      font-size: 16px; cursor: pointer; transition: 0.3s;
+    }
+    .options button:hover { background: #00d4ff; color: #000; }
+    .options button.selected { background: #00d4ff; color: #000; }
+    .submit-btn {
+      width: 100%; padding: 14px; margin-top: 20px; border: none; border-radius: 12px;
+      background: #00d4ff; font-size: 18px; font-weight: bold; cursor: pointer;
+      transition: 0.3s;
+    }
+    .submit-btn:hover { background: #fff; color: #000; }
+    .result {
+      margin-top: 25px; padding: 15px; border-radius: 12px;
+      background: rgba(255,255,255,0.1);
+    }
+    .correct { color: #4caf50; font-weight: bold; }
+    .wrong { color: #f44336; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Mock Test</h1>
+    <div id="quiz"></div>
+    <button class="submit-btn" onclick="submitQuiz()">Submit Test</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <!-- Load Questions -->
+  <script src="questions.js"></script>
+  <script>
+    const quizContainer = document.getElementById("quiz");
+    const userAnswers = {};
+
+    function loadQuiz() {
+      quizData.forEach((q, index) => {
+        const questionDiv = document.createElement("div");
+        questionDiv.classList.add("question-block");
+        questionDiv.innerHTML = `
+          <div class="question">${index + 1}. ${q.question}</div>
+          <div class="options">
+            ${q.options.map(opt => `<button onclick="selectOption(${index}, this)">${opt}</button>`).join("")}
+          </div>`;
+        quizContainer.appendChild(questionDiv);
+      });
+    }
+
+    function selectOption(qIndex, btn) {
+      const options = btn.parentNode.querySelectorAll("button");
+      options.forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      userAnswers[qIndex] = btn.textContent;
+    }
+
+    function submitQuiz() {
+      let score = 0;
+      let resultHTML = `<h2>Your Results:</h2>`;
+      quizData.forEach((q, i) => {
+        const userAns = userAnswers[i] || "Not Answered";
+        const correct = userAns === q.correct;
+        if (correct) score++;
+        resultHTML += `
+          <p><strong>Q${i + 1}:</strong> ${q.question}<br>
+          <span class="${correct ? 'correct' : 'wrong'}">Your Answer: ${userAns}</span><br>
+          <span class="correct">Correct Answer: ${q.correct}</span></p>`;
+      });
+      resultHTML += `<h3>Final Score: ${score} / ${quizData.length}</h3>`;
+      document.getElementById("result").innerHTML = resultHTML;
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    loadQuiz();
+  </script>
+</body>
+</html>
