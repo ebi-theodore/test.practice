@@ -1,152 +1,153 @@
 const quizData = [
-    {
-        "question": "Which hardware component would you check first if a computer does not power on?",
-        "options": ["CPU","SMPS","RAM","Hard Disk"],
-        "correct": "SMPS"
-    },
-    {
-        "question": "When installing a printer, what is the first step to ensure proper functionality?",
-        "options": ["Connect USB cable","Install device driver","Turn on the printer","Restart the system"],
-        "correct": "Install device driver"
-    },
-    {
-        "question": "Which command displays network configuration of a system in Windows?",
-        "options": ["PING","IPCONFIG","TRACERT","NETSTAT"],
-        "correct": "IPCONFIG"
-    },
-    {
-        "question": "For hosting multiple web applications securely on the same server, which Windows Server component is essential?",
-        "options": ["DHCP","Active Directory","IIS Web Server","FTP Server"],
-        "correct": "IIS Web Server"
-    },
-    {
-        "question": "To allow clients to automatically receive IP addresses in a LAN, which service must be installed?",
-        "options": ["DNS","DHCP","FTP","SMTP"],
-        "correct": "DHCP"
-    },
-    {
-        "question": "When configuring a VPN, what is the main goal?",
-        "options": ["Encrypt communication","Assign static IPs","Increase bandwidth","Format hard drives"],
-        "correct": "Encrypt communication"
-    },
-    {
-        "question": "When planning a backup strategy, which method ensures minimal data loss?",
-        "options": ["Manual daily backups","Automated scheduled backups","Copy files to USB once a month","Rely on RAID alone"],
-        "correct": "Automated scheduled backups"
-    },
-    {
-        "question": "When configuring DNS for a domain, which of the following is mandatory?",
-        "options": ["Subnet mask","Domain name and IP mapping","FTP access","Static routing"],
-        "correct": "Domain name and IP mapping"
-    },
-    {
-        "question": "If a scanner is not detected after installation, what is the first troubleshooting step?",
-        "options": ["Replace the scanner","Check and update device driver","Reinstall Windows","Check firewall settings"],
-        "correct": "Check and update device driver"
-    },
-    {
-        "question": "When creating network topologies in a simulation software, which factor is most critical?",
-        "options": ["Cable length","Logical arrangement and IP addressing","CPU speed","Hard disk capacity"],
-        "correct": "Logical arrangement and IP addressing"
-    },
-    {
-        "question": "Which network device forwards traffic only to the intended device based on MAC address?",
-        "options": ["Hub","Switch","Router","Repeater"],
-        "correct": "Switch"
-    },
-    {
-        "question": "Which Windows Server feature allows centralized authentication of users in a domain?",
-        "options": ["DHCP","Active Directory","IIS","Firewall"],
-        "correct": "Active Directory"
-    },
-    {
-        "question": "In a LAN, which device is essential to interconnect multiple networks and provide internet access?",
-        "options": ["Hub","Switch","Router","Modem"],
-        "correct": "Router"
-    },
-    {
-        "question": "When performing disk defragmentation, what is the primary benefit?",
-        "options": ["Reduce file size","Improve file access speed","Increase disk storage","Encrypt data"],
-        "correct": "Improve file access speed"
-    },
-    {
-        "question": "If you want to enforce policies on users’ password strength and login times, which Windows feature is used?",
-        "options": ["Active Directory","DHCP","DNS","IIS"],
-        "correct": "Active Directory"
-    },
-    {
-        "question": "Which cabling type should be used for connecting a PC to a switch in a corporate network?",
-        "options": ["Cross-over","Straight-through","Coaxial","Fiber optic"],
-        "correct": "Straight-through"
-    },
-    {
-        "question": "To allow clients to send emails via a server in a secure manner, which service is configured?",
-        "options": ["HTTP","FTP","SMTP","DHCP"],
-        "correct": "SMTP"
-    },
-    {
-        "question": "Which scenario requires configuring subnetting in a network?",
-        "options": ["Multiple departments with limited IPs","Connecting a single PC","Installing printer drivers","Installing Windows updates"],
-        "correct": "Multiple departments with limited IPs"
-    },
-    {
-        "question": "Which subnet mask corresponds to a Class C IP address?",
-        "options": ["255.0.0.0","255.255.0.0","255.255.255.0","255.255.255.255"],
-        "correct": "255.255.255.0"
-    },
-    {
-        "question": "In IP addressing, why is subnet mask important?",
-        "options": ["To increase CPU speed","To determine network and host portions of an IP","To compress packets","To assign MAC addresses"],
-        "correct": "To determine network and host portions of an IP"
-    },
-    {
-        "question": "Which scenario requires configuring firewall rules?",
-        "options": ["Allowing specific service ports for clients","Formatting hard disks","Installing Active Directory","Performing disk cleanup"],
-        "correct": "Allowing specific service ports for clients"
-    },
-    {
-        "question": "Which of the following is firmware?",
-        "options": ["BIOS","MS Word","Windows OS","SSD"],
-        "correct": "BIOS"
-    },
-    {
-        "question": "What is the main function of a motherboard?",
-        "options": ["Store data permanently","Connect and allow communication between all components","Process instructions","Provide power to peripherals"],
-        "correct": "Connect and allow communication between all components"
-    },
-    {
-        "question": "What does SMPS stand for?",
-        "options": ["Standard Memory Power Supply","Switching Mode Power Supply","Single Motherboard Power Source","System Main Power Storage"],
-        "correct": "Switching Mode Power Supply"
-    },
-    {
-        "question": "Which memory is fastest in a computer system?",
-        "options": ["Main memory","Cache memory","SSD","Hard disk"],
-        "correct": "Cache memory"
-    },
-    {
-        "question": "Which printer type uses heat to transfer ink to paper?",
-        "options": ["Laser","Dot Matrix","Inkjet","Thermal"],
-        "correct": "Thermal"
-    },
-    {
-        "question": "What is the correct sequence to format and partition a hard disk?",
-        "options": ["Partition → Format","Format → Partition","Scan → Partition","Defrag → Partition"],
-        "correct": "Partition → Format"
-    },
-    {
-        "question": "Which utility is used to check disk errors in Windows?",
-        "options": ["Disk Cleanup","Scan Disk","Defragmenter","Backup"],
-        "correct": "Scan Disk"
-    },
-    {
-        "question": "Which service is responsible for translating domain names to IP addresses?",
-        "options": ["DHCP","DNS","FTP","SMTP"],
-        "correct": "DNS"
-    },
-    {
-        "question": "Which cabling type is used for connecting a computer to a switch?",
-        "options": ["Straight-through","Cross-over","HDMI","RJ45"],
-        "correct": "Straight-through"
-    }
-];
+  {
+    "question": "What is the default value of a bool variable in C#?",
+    "options": ["TRUE", "FALSE", "0", "null"],
+    "correct": "FALSE"
+  },
+  {
+    "question": "Which validator ensures the user enters a number within a specified range in ASP.NET?",
+    "options": ["RangeValidator", "RequiredFieldValidator", "RegularExpressionValidator", "CompareValidator"],
+    "correct": "RangeValidator"
+  },
+  {
+    "question": "How can you retrieve the value of a cookie in ASP.NET?",
+    "options": ["Request.Cookies[\"name\"]", "Response.Cookies[\"name\"]", "Session[\"name\"]", "ViewState[\"name\"]"],
+    "correct": "Request.Cookies[\"name\"]"
+  },
+  {
+    "question": "Which class in .NET is used to serialize an object into XML?",
+    "options": ["XmlDocument", "XmlSerializer", "XmlReader", "XmlWriter"],
+    "correct": "XmlSerializer"
+  },
+  {
+    "question": "What is the main purpose of XML serialization in .NET?",
+    "options": ["To store object data in binary format", "To convert an object into an XML format for storage or transfer", "To validate XML against XSD", "To encrypt XML data"],
+    "correct": "To convert an object into an XML format for storage or transfer"
+  },
+  {
+    "question": "Which of the following can be used to read an XML document into a DataSet?",
+    "options": ["DataSet.ReadXml()", "DataSet.LoadXml()", "XmlDocument.Read()", "XmlSerializer.Read()"],
+    "correct": "DataSet.ReadXml()"
+  },
+  {
+    "question": "Which control in Windows Forms allows the user to select one item from a list?",
+    "options": ["ListBox", "ComboBox", "TextBox", "Label"],
+    "correct": "ComboBox"
+  },
+  {
+    "question": "In C#, which keyword is used to inherit a class?",
+    "options": ["extends", "inherits", ":", "implements"],
+    "correct": ":"
+  },
+  {
+    "question": "Which event is triggered when a form is loaded in Windows Forms?",
+    "options": ["Click", "Load", "TextChanged", "Activated"],
+    "correct": "Load"
+  },
+  {
+    "question": "Which of the following is true about static classes in C#?",
+    "options": ["Can be instantiated", "Can contain only static members", "Can inherit another class", "Can contain abstract methods"],
+    "correct": "Can contain only static members"
+  },
+  {
+    "question": "Predict the Output: int[] arr={1,2,3}; Console.WriteLine(arr.Length);",
+    "options": ["2", "3", "0", "Error"],
+    "correct": "3"
+  },
+  {
+    "question": "What happens if a DataSet is filled but table name is incorrect when binding GridView?",
+    "options": ["Shows empty data", "Runtime error", "Compilation error", "Previous data shown"],
+    "correct": "Shows empty data"
+  },
+  {
+    "question": "Predict the Output: int x=10; int y=3; Console.WriteLine(x%y);",
+    "options": ["1", "0", "3", "10"],
+    "correct": "1"
+  },
+  {
+    "question": "Predict the Output: DataSet ds=new DataSet(); ds.ReadXml(\"students.xml\");",
+    "options": ["Loads XML if file exists", "Compile-time error", "Runtime error if XML malformed", "Both A and C"],
+    "correct": "Both A and C"
+  },
+  {
+    "question": "Predict the Output: XmlDocument doc=new XmlDocument(); doc.LoadXml(\"<student><name>John</name></student>\"); Console.WriteLine(doc.DocumentElement.Name);",
+    "options": ["student", "name", "John", "Error"],
+    "correct": "student"
+  },
+  {
+    "question": "Which property of a GridView is used to bind data in ASP.NET?",
+    "options": ["DataSourceID", "DataSource", "DataBind()", "Both B and C"],
+    "correct": "Both B and C"
+  },
+  {
+    "question": "Which control in ASP.NET allows multiple selections from a list?",
+    "options": ["DropDownList", "TextBox", "RadioButton", "CheckBoxList"],
+    "correct": "CheckBoxList"
+  },
+  {
+    "question": "Which ASP.NET state management mechanism stores data on the client in a small file managed by the browser?",
+    "options": ["Session", "ViewState", "Application", "Cookies"],
+    "correct": "Cookies"
+  },
+  {
+    "question": "Which method of DataSet writes XML schema and data to a file?",
+    "options": ["WriteXmlSchema()", "WriteXml()", "ReadXml()", "ReadXmlSchema()"],
+    "correct": "WriteXmlSchema()"
+  },
+  {
+    "question": "Which method is used to start a transaction in ADO.NET?",
+    "options": ["BeginTransaction()", "StartTransaction()", "Commit()", "Rollback()"],
+    "correct": "BeginTransaction()"
+  },
+  {
+    "question": "What is the purpose of SqlDataAdapter in ADO.NET?",
+    "options": ["Connect to database", "Fill a DataSet and update database", "Execute stored procedure", "Bind data to web control"],
+    "correct": "Fill a DataSet and update database"
+  },
+  {
+    "question": "Which statement is true about ViewState in ASP.NET?",
+    "options": ["Stored on server", "Stored on client", "Cannot store objects", "Only used for sessions"],
+    "correct": "Stored on client"
+  },
+  {
+    "question": "Which C# keyword is used to declare a class that cannot be instantiated?",
+    "options": ["sealed", "static", "abstract", "virtual"],
+    "correct": "abstract"
+  },
+  {
+    "question": "Which class in ADO.NET is used to execute SQL queries that return data?",
+    "options": ["SqlCommand", "SqlDataAdapter", "SqlDataReader", "DataSet"],
+    "correct": "SqlDataReader"
+  },
+  {
+    "question": "Which XML node type represents the actual content between tags?",
+    "options": ["Attribute", "Element", "Comment", "Declaration"],
+    "correct": "Element"
+  },
+  {
+    "question": "Identify the error: int x; x = \"10\";",
+    "options": ["No error", "Type mismatch", "Syntax error", "Runtime error"],
+    "correct": "Type mismatch"
+  },
+  {
+    "question": "What will be printed? char ch='a'; if(ch>='A' && ch<='Z') Console.WriteLine(\"Upper\"); else Console.WriteLine(\"Lower\");",
+    "options": ["Upper", "Lower", "Error", "No output"],
+    "correct": "Lower"
+  },
+  {
+    "question": "What happens if you try to instantiate a static class in C#?",
+    "options": ["Allowed", "Compile-time error", "Runtime exception", "Produces default object"],
+    "correct": "Compile-time error"
+  },
+  {
+    "question": "Identify error: SqlConnection con = new SqlConnection(); con.ConnectionString=@”xxx”; SqlCommand cmd = new SqlCommand(\"SELECT * FROM tbl\"); SqlDataReader dr = cmd.ExecuteReader();",
+    "options": ["Connection not opened", "SqlCommand syntax wrong", "ExecuteReader() wrong", "No error"],
+    "correct": "Connection not opened"
+  },
+  {
+    "question": "Predict the output: string s=\"Hello\"; Console.WriteLine(s[1]);",
+    "options": ["H", "e", "l", "o"],
+    "correct": "e"
+  }
+]
+
