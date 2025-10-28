@@ -1,152 +1,302 @@
 const quizData = [
   {
-    "question": "What is the delivery model for computing resources like storage, processing power, and applications over the internet called?",
-    "options": ["Client/Server Computing", "Distributed Computing", "Cloud Computing", "Thin Client"],
-    "correct": "Cloud Computing"
+    "question": "What is the default value of a bool variable in C#?",
+    "options": [
+      "A. TRUE",
+      "B. FALSE",
+      "C. 0",
+      "D. null"
+    ],
+    "correct": "B. FALSE"
   },
   {
-    "question": "A cloud computing resource exclusively used inside a single business or organization is known as a:",
-    "options": ["Public cloud", "Hybrid cloud", "Private cloud", "Shared community cloud"],
-    "correct": "Private cloud"
+    "question": "Which validator ensures the user enters a number within a specified range in ASP.NET?",
+    "options": [
+      "A. RangeValidator",
+      "B. RequiredFieldValidator",
+      "C. RegularExpressionValidator",
+      "D. CompareValidator"
+    ],
+    "correct": "A. RangeValidator"
   },
   {
-    "question": "Which component of a cloud client is characterized by having no internal hard disks, relying on the server to perform all the work?",
-    "options": ["Mobile client", "Thin client", "Thick client", "Distributed client"],
-    "correct": "Thin client"
+    "question": "How can you retrieve the value of a cookie in ASP.NET?",
+    "options": [
+      "A. Request.Cookies[\"name\"]",
+      "B. Response.Cookies[\"name\"]",
+      "C. Session[\"name\"]",
+      "D. ViewState[\"name\"]"
+    ],
+    "correct": "A. Request.Cookies[\"name\"]"
   },
   {
-    "question": "Which characteristic of cloud computing means you are charged only for the resources you consume?",
-    "options": ["Broad Network Access", "Scalability", "Measured Service (Pay-as-you-Go)", "Shared Resources"],
-    "correct": "Measured Service (Pay-as-you-Go)"
+    "question": "Which class in .NET is used to serialize an object into XML?",
+    "options": [
+      "A. XmlDocument",
+      "B. XmlSerializer",
+      "C. XmlReader",
+      "D. XmlWriter"
+    ],
+    "correct": "B. XmlSerializer"
   },
   {
-    "question": "Which of the following is NOT one of the three components cloud computing is classified into?",
-    "options": ["Clients", "Data centre", "Distributed servers", "Mainframe"],
-    "correct": "Mainframe"
+    "question": "What is the main purpose of XML serialization in .NET?",
+    "options": [
+      "A. To store object data in binary format",
+      "B. To convert an object into an XML format for storage or transfer",
+      "C. To validate XML against XSD",
+      "D. To encrypt XML data"
+    ],
+    "correct": "B. To convert an object into an XML format for storage or transfer"
   },
   {
-    "question": "The characteristic that allows a shopping website to handle more traffic during sales and reduce resources afterwards is called:",
-    "options": ["On-Demand Self-service", "Measured Service", "Broad Network Access", "Scalability"],
-    "correct": "Scalability"
+    "question": "Which of the following can be used to read an XML document into a DataSet?",
+    "options": [
+      "A. DataSet.ReadXml()",
+      "B. DataSet.LoadXml()",
+      "C. XmlDocument.Read()",
+      "D. XmlSerializer.Read()"
+    ],
+    "correct": "A. DataSet.ReadXml()"
   },
   {
-    "question": "What is considered the 'heart of cloud computing'?",
-    "options": ["Hardware", "Operating System", "Virtualization", "Application"],
-    "correct": "Virtualization"
+    "question": "Which control in Windows Forms allows the user to select one item from a list?",
+    "options": [
+      "A. ListBox",
+      "B. ComboBox",
+      "C. TextBox",
+      "D. Label"
+    ],
+    "correct": "B. ComboBox"
   },
   {
-    "question": "Which layer is responsible for creating the environment for the guest to operate?",
-    "options": ["Host Operating System", "Application layer", "Virtualization layer", "Guest OS"],
-    "correct": "Virtualization layer"
+    "question": "In C#, which keyword is used to inherit a class?",
+    "options": [
+      "A. extends",
+      "B. inherits",
+      "C. :",
+      "D. implements"
+    ],
+    "correct": "C. :"
   },
   {
-    "question": "What type of virtualization splits one physical server into many independent virtual servers?",
-    "options": ["Storage virtualization", "Network virtualization", "Application virtualization", "Server virtualization"],
-    "correct": "Server virtualization"
+    "question": "Which event is triggered when a form is loaded in Windows Forms?",
+    "options": [
+      "A. Click",
+      "B. Load",
+      "C. TextChanged",
+      "D. Activated"
+    ],
+    "correct": "B. Load"
   },
   {
-    "question": "Which cloud service model uses virtualization to rent out virtual servers to users (like AWS or Azure)?",
-    "options": ["PaaS", "SaaS", "IaaS (Infrastructure-as-a-Service)", "XaaS"],
-    "correct": "IaaS (Infrastructure-as-a-Service)"
+    "question": "Which of the following is true about static classes in C#?",
+    "options": [
+      "A. Can be instantiated",
+      "B. Can contain only static members",
+      "C. Can inherit another class",
+      "D. Can contain abstract methods"
+    ],
+    "correct": "B. Can contain only static members"
   },
   {
-    "question": "What is the key software component in virtualization that allows multiple VMs to run on a single physical machine?",
-    "options": ["Router", "Hypervisor", "Virtual Storage", "Guest OS"],
-    "correct": "Hypervisor"
+    "question": "Predict the Output: int[] arr={1,2,3}; Console.WriteLine(arr.Length);",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 0",
+      "D. Error"
+    ],
+    "correct": "B. 3"
   },
   {
-    "question": "Which type of hypervisor operates directly on the physical hardware without an underlying operating system?",
-    "options": ["Type 2 (Hosted)", "Hybrid", "Para-virtualization", "Type 1 (Bare-Metal)"],
-    "correct": "Type 1 (Bare-Metal)"
+    "question": "What happens if a DataSet is filled but table name is incorrect when binding GridView?",
+    "options": [
+      "A. Shows empty data",
+      "B. Runtime error",
+      "C. Compilation error",
+      "D. Previous data shown"
+    ],
+    "correct": "A. Shows empty data"
   },
   {
-    "question": "A web service allows applications to send and receive messages between a client and a server using standardized protocols like:",
-    "options": ["HTML", "FTP", "HTTP or HTTPS", "TCP/IP"],
-    "correct": "HTTP or HTTPS"
+    "question": "Predict the Output: int x=10; int y=3; Console.WriteLine(x%y);",
+    "options": [
+      "A. 1",
+      "B. 0",
+      "C. 3",
+      "D. 10"
+    ],
+    "correct": "A. 1"
   },
   {
-    "question": "Which component of a web service defines rules for sending messages between computers, often using XML format over HTTP?",
-    "options": ["WSDL", "UDDI", "SOAP (Simple Object Access Protocol)", "REST"],
-    "correct": "SOAP (Simple Object Access Protocol)"
+    "question": "Predict the Output: DataSet ds=new DataSet(); ds.ReadXml(\"students.xml\");",
+    "options": [
+      "A. Loads XML if file exists",
+      "B. Compile-time error",
+      "C. Runtime error if XML malformed",
+      "D. Both A and C"
+    ],
+    "correct": "D. Both A and C"
   },
   {
-    "question": "What language is used in a web service request and response to ensure all systems can understand it?",
-    "options": ["HTML", "Java", "XML", "Python"],
-    "correct": "XML"
+    "question": "Predict the Output: XmlDocument doc=new XmlDocument(); doc.LoadXml(\"<student><name>John</name></student>\"); Console.WriteLine(doc.DocumentElement.Name);",
+    "options": [
+      "A. student",
+      "B. name",
+      "C. John",
+      "D. Error"
+    ],
+    "correct": "A. student"
   },
   {
-    "question": "A web service feature where the client waits for the server's response before continuing its tasks is known as:",
-    "options": ["Loosely Coupled", "Asynchronous", "Synchronous", "Coarse-Grained"],
-    "correct": "Synchronous"
+    "question": "Which property of a GridView is used to bind data in ASP.NET?",
+    "options": [
+      "A. DataSourceID",
+      "B. DataSource",
+      "C. DataBind()",
+      "D. Both B and C"
+    ],
+    "correct": "D. Both B and C"
   },
   {
-    "question": "A web service is considered Loosely Coupled because the client and server are:",
-    "options": ["Tightly linked", "Independent", "Written in the same language", "Always asynchronous"],
-    "correct": "Independent"
+    "question": "Which control in ASP.NET allows multiple selections from a list?",
+    "options": [
+      "A. DropDownList",
+      "B. TextBox",
+      "C. RadioButton",
+      "D. CheckBoxList"
+    ],
+    "correct": "D. CheckBoxList"
   },
   {
-    "question": "Errors in SOAP are handled clearly through what mechanism?",
-    "options": ["XML Errors", "SOAP Failures", "SOAP Faults", "HTTP Status Codes"],
-    "correct": "SOAP Faults"
+    "question": "Which ASP.NET state management mechanism stores data on the client in a small file managed by the browser?",
+    "options": [
+      "A. Session",
+      "B. ViewState",
+      "C. Application",
+      "D. Cookies"
+    ],
+    "correct": "D. Cookies"
   },
   {
-    "question": "Cloud security refers to the technologies and policies used to protect what three elements?",
-    "options": ["Users, Networks, Servers", "Information, Data, Applications", "Hardware, Software, People", "Privacy, Access, Availability"],
-    "correct": "Information, Data, Applications"
+    "question": "Which method of DataSet writes XML schema and data to a file?",
+    "options": [
+      "A. WriteXmlSchema()",
+      "B. WriteXml()",
+      "C. ReadXml()",
+      "D. ReadXmlSchema()"
+    ],
+    "correct": "A. WriteXmlSchema()"
   },
   {
-    "question": "Which cloud type, in addition to public and private, should be considered when evaluating risk?",
-    "options": ["Multi-tenant", "Single-tenant", "Shared community", "Hosted"],
-    "correct": "Shared community"
+    "question": "Which method is used to start a transaction in ADO.NET?",
+    "options": [
+      "A. BeginTransaction()",
+      "B. StartTransaction()",
+      "C. Commit()",
+      "D. Rollback()"
+    ],
+    "correct": "A. BeginTransaction()"
   },
   {
-    "question": "Which risk is explicitly mentioned as needing to be evaluated when securing the cloud?",
-    "options": ["Natural disasters", "Loss of privacy", "Software licensing issues", "Employee turnover"],
-    "correct": "Loss of privacy"
+    "question": "What is the purpose of SqlDataAdapter in ADO.NET?",
+    "options": [
+      "A. Connect to database",
+      "B. Fill a DataSet and update database",
+      "C. Execute stored procedure",
+      "D. Bind data to web control"
+    ],
+    "correct": "B. Fill a DataSet and update database"
   },
   {
-    "question": "What technique can the cloud provider use to aggregate storage assets into a cloud storage system?",
-    "options": ["CPU virtualization", "Storage virtualization", "Network virtualization", "Tenancy management"],
-    "correct": "Storage virtualization"
+    "question": "Which statement is true about ViewState in ASP.NET?",
+    "options": [
+      "A. Stored on server",
+      "B. Stored on client",
+      "C. Cannot store objects",
+      "D. Only used for sessions"
+    ],
+    "correct": "B. Stored on client"
   },
   {
-    "question": "What is the term for a cloud environment where a single cloud customer uses the computing resources?",
-    "options": ["Multi-tenant", "Dual-tenant", "Single-tenant", "Shared Community"],
-    "correct": "Single-tenant"
+    "question": "Which C# keyword is used to declare a class that cannot be instantiated?",
+    "options": [
+      "A. sealed",
+      "B. static",
+      "C. abstract",
+      "D. virtual"
+    ],
+    "correct": "C. abstract"
   },
   {
-    "question": "What is the main challenge of Multi-tenancy?",
-    "options": ["High cost", "Ensuring one user cannot access another user's data", "Difficulty in physical location", "Low data speed"],
-    "correct": "Ensuring one user cannot access another user's data"
+    "question": "Which class in ADO.NET is used to execute SQL queries that return data?",
+    "options": [
+      "A. SqlCommand",
+      "B. SqlDataAdapter",
+      "C. SqlDataReader",
+      "D. DataSet"
+    ],
+    "correct": "C. SqlDataReader"
   },
   {
-    "question": "Adobe Creative Cloud Firefly is a set of tools primarily powered by:",
-    "options": ["Machine Learning", "Internet of Things", "Artificial Intelligence (AI)", "Virtualization"],
-    "correct": "Artificial Intelligence (AI)"
+    "question": "Which XML node type represents the actual content between tags?",
+    "options": [
+      "A. Attribute",
+      "B. Element",
+      "C. Comment",
+      "D. Declaration"
+    ],
+    "correct": "B. Element"
   },
   {
-    "question": "Which Firefly design model is used to modify or enhance images by adding or removing elements?",
-    "options": ["Text-to-Image", "Generative fill model", "Text effects model", "Style transfer model"],
-    "correct": "Generative fill model"
+    "question": "Identify the error: int x; x = \"10\";",
+    "options": [
+      "A. No error",
+      "B. Type mismatch",
+      "C. Syntax error",
+      "D. Runtime error"
+    ],
+    "correct": "B. Type mismatch"
   },
   {
-    "question": "Which Firefly design model transforms a photo to resemble an iconic painting style, like 'Van Gogh's Starry Night'?",
-    "options": ["Image Enhancement Model", "Logo Generation Model", "Style transfer model", "Video Effects Model"],
-    "correct": "Style transfer model"
+    "question": "What will be printed? char ch='a'; if(ch>='A' && ch<='Z') Console.WriteLine(\"Upper\"); else Console.WriteLine(\"Lower\");",
+    "options": [
+      "A. Upper",
+      "B. Lower",
+      "C. Error",
+      "D. No output"
+    ],
+    "correct": "B. Lower"
   },
   {
-    "question": "What is GitHub primarily used for by developers?",
-    "options": ["Creating video games", "Storing and sharing their code", "Running virtual machines", "Managing payroll"],
-    "correct": "Storing and sharing their code"
+    "question": "What happens if you try to instantiate a static class in C#?",
+    "options": [
+      "A. Allowed",
+      "B. Compile-time error",
+      "C. Runtime exception",
+      "D. Produces default object"
+    ],
+    "correct": "B. Compile-time error"
   },
   {
-    "question": "In GitHub, what is a repository (repo) considered?",
-    "options": ["A list of users", "The main folder for a project", "A type of server", "A bug tracking tool"],
-    "correct": "The main folder for a project"
+    "question": "Identify error: SqlConnection con = new SqlConnection(); con.ConnectionString=@\"xxx\"; SqlCommand cmd = new SqlCommand(\"SELECT * FROM tbl\"); SqlDataReader dr = cmd.ExecuteReader();",
+    "options": [
+      "A. Connection not opened",
+      "B. SqlCommand syntax wrong",
+      "C. ExecuteReader() wrong",
+      "D. No error"
+    ],
+    "correct": "A. Connection not opened"
   },
   {
-    "question": "In GitHub, a Commit represents what?",
-    "options": ["A request to merge changes", "A copy of the repository", "Changes made to files", "A bug report"],
-    "correct": "Changes made to files"
+    "question": "Predict the output: string s=\"Hello\"; Console.WriteLine(s[1]);",
+    "options": [
+      "A. H",
+      "B. e",
+      "C. l",
+      "D. o"
+    ],
+    "correct": "B. e"
   }
 ]
