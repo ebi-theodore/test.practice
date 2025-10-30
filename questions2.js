@@ -1,153 +1,202 @@
 const quizData = [
   {
-    "question": "What is the default value of a bool variable in C#?",
-    "options": ["TRUE", "FALSE", "0", "null"],
-    "correct": "FALSE"
+    "question": "What does IoT stand for?",
+    "options": [
+      "A) Internet on Time",
+      "B) Internet of Things",
+      "C) Integration of Technology",
+      "D) Intelligent Operating Tools"
+    ],
+    "correct": "B) Internet of Things"
   },
   {
-    "question": "Which validator ensures the user enters a number within a specified range in ASP.NET?",
-    "options": ["RangeValidator", "RequiredFieldValidator", "RegularExpressionValidator", "CompareValidator"],
-    "correct": "RangeValidator"
+    "question": "Which of the following is used to detect physical changes like temperature, light, or motion?",
+    "options": [
+      "A) Actuator",
+      "B) Sensor",
+      "C) Microcontroller",
+      "D) Arduino IDE"
+    ],
+    "correct": "B) Sensor"
   },
   {
-    "question": "How can you retrieve the value of a cookie in ASP.NET?",
-    "options": ["Request.Cookies[\"name\"]", "Response.Cookies[\"name\"]", "Session[\"name\"]", "ViewState[\"name\"]"],
-    "correct": "Request.Cookies[\"name\"]"
+    "question": "Which device is used to perform actions based on sensor input in an IoT system?",
+    "options": [
+      "A) Sensor",
+      "B) Microcontroller",
+      "C) Actuator",
+      "D) IDE"
+    ],
+    "correct": "C) Actuator"
   },
   {
-    "question": "Which class in .NET is used to serialize an object into XML?",
-    "options": ["XmlDocument", "XmlSerializer", "XmlReader", "XmlWriter"],
-    "correct": "XmlSerializer"
+    "question": "Which of the following is a popular microcontroller used in IoT projects?",
+    "options": [
+      "A) Arduino UNO",
+      "B) Raspberry Pi OS",
+      "C) Python IDE",
+      "D) Windows 10"
+    ],
+    "correct": "A) Arduino UNO"
   },
   {
-    "question": "What is the main purpose of XML serialization in .NET?",
-    "options": ["To store object data in binary format", "To convert an object into an XML format for storage or transfer", "To validate XML against XSD", "To encrypt XML data"],
-    "correct": "To convert an object into an XML format for storage or transfer"
+    "question": "What is the primary software used to program Arduino boards?",
+    "options": [
+      "A) Arduino IDE",
+      "B) Visual Studio",
+      "C) Eclipse",
+      "D) NetBeans"
+    ],
+    "correct": "A) Arduino IDE"
   },
   {
-    "question": "Which of the following can be used to read an XML document into a DataSet?",
-    "options": ["DataSet.ReadXml()", "DataSet.LoadXml()", "XmlDocument.Read()", "XmlSerializer.Read()"],
-    "correct": "DataSet.ReadXml()"
+    "question": "What is ThingSpeak primarily used for in IoT applications?",
+    "options": [
+      "A) Writing Arduino code",
+      "B) Data collection and visualization on the cloud",
+      "C) Controlling actuators offline",
+      "D) Compiling programs"
+    ],
+    "correct": "B) Data collection and visualization on the cloud"
   },
   {
-    "question": "Which control in Windows Forms allows the user to select one item from a list?",
-    "options": ["ListBox", "ComboBox", "TextBox", "Label"],
-    "correct": "ComboBox"
+    "question": "What is a digital twin?",
+    "options": [
+      "A) A duplicate microcontroller",
+      "B) A virtual representation of a physical object",
+      "C) A cloud storage device",
+      "D) A type of sensor"
+    ],
+    "correct": "B) A virtual representation of a physical object"
   },
   {
-    "question": "In C#, which keyword is used to inherit a class?",
-    "options": ["extends", "inherits", ":", "implements"],
-    "correct": ":"
+    "question": "Which of the following is required to use ThingSpeak cloud platform?",
+    "options": [
+      "A) Python installation",
+      "B) Cloud account registration",
+      "C) Arduino IDE only",
+      "D) Linux operating system"
+    ],
+    "correct": "B) Cloud account registration"
   },
   {
-    "question": "Which event is triggered when a form is loaded in Windows Forms?",
-    "options": ["Click", "Load", "TextChanged", "Activated"],
-    "correct": "Load"
+    "question": "Which IoT function is enabled by digital twin technology?",
+    "options": [
+      "A) Remote monitoring and simulation of real devices",
+      "B) Only coding microcontrollers",
+      "C) Printing sensor data on paper",
+      "D) Local network file sharing"
+    ],
+    "correct": "A) Remote monitoring and simulation of real devices"
   },
   {
-    "question": "Which of the following is true about static classes in C#?",
-    "options": ["Can be instantiated", "Can contain only static members", "Can inherit another class", "Can contain abstract methods"],
-    "correct": "Can contain only static members"
+    "question": "What type of data can be stored in ThingSpeak?",
+    "options": [
+      "A) Sensor readings",
+      "B) Text documents",
+      "C) Images and videos only",
+      "D) PDF files"
+    ],
+    "correct": "A) Sensor readings"
   },
   {
-    "question": "Predict the Output: int[] arr={1,2,3}; Console.WriteLine(arr.Length);",
-    "options": ["2", "3", "0", "Error"],
-    "correct": "3"
+    "question": "Which programming language is primarily used in Arduino IDE?",
+    "options": [
+      "A) Java",
+      "B) C/C++",
+      "C) Python",
+      "D) HTML"
+    ],
+    "correct": "B) C/C++"
   },
   {
-    "question": "What happens if a DataSet is filled but table name is incorrect when binding GridView?",
-    "options": ["Shows empty data", "Runtime error", "Compilation error", "Previous data shown"],
-    "correct": "Shows empty data"
+    "question": "Which of the following is not a feature of IoT?",
+    "options": [
+      "A) Data collection",
+      "B) Remote monitoring",
+      "C) Physical actuation",
+      "D) Manual typewriting"
+    ],
+    "correct": "D) Manual typewriting"
   },
   {
-    "question": "Predict the Output: int x=10; int y=3; Console.WriteLine(x%y);",
-    "options": ["1", "0", "3", "10"],
-    "correct": "1"
+    "question": "What type of component is a LED when connected to an Arduino for IoT applications?",
+    "options": [
+      "A) Sensor",
+      "B) Actuator",
+      "C) Microcontroller",
+      "D) IDE"
+    ],
+    "correct": "B) Actuator"
   },
   {
-    "question": "Predict the Output: DataSet ds=new DataSet(); ds.ReadXml(\"students.xml\");",
-    "options": ["Loads XML if file exists", "Compile-time error", "Runtime error if XML malformed", "Both A and C"],
-    "correct": "Both A and C"
+    "question": "Which of the following is a correct description of a microcontroller?",
+    "options": [
+      "A) A device that only stores data",
+      "B) A device that controls sensors and actuators based on programming",
+      "C) A software to write code",
+      "D) A type of internet protocol"
+    ],
+    "correct": "B) A device that controls sensors and actuators based on programming"
   },
   {
-    "question": "Predict the Output: XmlDocument doc=new XmlDocument(); doc.LoadXml(\"<student><name>John</name></student>\"); Console.WriteLine(doc.DocumentElement.Name);",
-    "options": ["student", "name", "John", "Error"],
-    "correct": "student"
+    "question": "In IoT, which of the following combinations is correct?",
+    "options": [
+      "A) Sensor \u2192 Acts \u2192 Controller \u2192 Data",
+      "B) Sensor \u2192 Microcontroller \u2192 Actuator \u2192 Action",
+      "C) Controller \u2192 Sensor \u2192 Actuator \u2192 Action",
+      "D) Microcontroller \u2192 IDE \u2192 Sensor \u2192 Actuator"
+    ],
+    "correct": "B) Sensor \u2192 Microcontroller \u2192 Actuator \u2192 Action"
   },
   {
-    "question": "Which property of a GridView is used to bind data in ASP.NET?",
-    "options": ["DataSourceID", "DataSource", "DataBind()", "Both B and C"],
-    "correct": "Both B and C"
+    "question": "Which of the following is not a feature of ThingSpeak cloud?",
+    "options": [
+      "A) Data visualization through charts",
+      "B) Real-time data logging",
+      "C) Remote control of actuators",
+      "D) Installing Arduino IDE"
+    ],
+    "correct": "D) Installing Arduino IDE"
   },
   {
-    "question": "Which control in ASP.NET allows multiple selections from a list?",
-    "options": ["DropDownList", "TextBox", "RadioButton", "CheckBoxList"],
-    "correct": "CheckBoxList"
+    "question": "Digital twin technology helps in:",
+    "options": [
+      "A) Predictive maintenance",
+      "B) Manual switching of devices",
+      "C) Only cloud account creation",
+      "D) Offline data storage"
+    ],
+    "correct": "A) Predictive maintenance"
   },
   {
-    "question": "Which ASP.NET state management mechanism stores data on the client in a small file managed by the browser?",
-    "options": ["Session", "ViewState", "Application", "Cookies"],
-    "correct": "Cookies"
+    "question": "Which protocol is commonly used to send sensor data to ThingSpeak?",
+    "options": [
+      "A) HTTP / MQTT",
+      "B) FTP",
+      "C) SMTP",
+      "D) POP3"
+    ],
+    "correct": "A) HTTP / MQTT"
   },
   {
-    "question": "Which method of DataSet writes XML schema and data to a file?",
-    "options": ["WriteXmlSchema()", "WriteXml()", "ReadXml()", "ReadXmlSchema()"],
-    "correct": "WriteXmlSchema()"
+    "question": "In ThingSpeak, what is a \u201cchannel\u201d?",
+    "options": [
+      "A) A hardware microcontroller",
+      "B) A workspace to store and visualize IoT data",
+      "C) An IDE for coding",
+      "D) A type of actuator"
+    ],
+    "correct": "B) A workspace to store and visualize IoT data"
   },
   {
-    "question": "Which method is used to start a transaction in ADO.NET?",
-    "options": ["BeginTransaction()", "StartTransaction()", "Commit()", "Rollback()"],
-    "correct": "BeginTransaction()"
-  },
-  {
-    "question": "What is the purpose of SqlDataAdapter in ADO.NET?",
-    "options": ["Connect to database", "Fill a DataSet and update database", "Execute stored procedure", "Bind data to web control"],
-    "correct": "Fill a DataSet and update database"
-  },
-  {
-    "question": "Which statement is true about ViewState in ASP.NET?",
-    "options": ["Stored on server", "Stored on client", "Cannot store objects", "Only used for sessions"],
-    "correct": "Stored on client"
-  },
-  {
-    "question": "Which C# keyword is used to declare a class that cannot be instantiated?",
-    "options": ["sealed", "static", "abstract", "virtual"],
-    "correct": "abstract"
-  },
-  {
-    "question": "Which class in ADO.NET is used to execute SQL queries that return data?",
-    "options": ["SqlCommand", "SqlDataAdapter", "SqlDataReader", "DataSet"],
-    "correct": "SqlDataReader"
-  },
-  {
-    "question": "Which XML node type represents the actual content between tags?",
-    "options": ["Attribute", "Element", "Comment", "Declaration"],
-    "correct": "Element"
-  },
-  {
-    "question": "Identify the error: int x; x = \"10\";",
-    "options": ["No error", "Type mismatch", "Syntax error", "Runtime error"],
-    "correct": "Type mismatch"
-  },
-  {
-    "question": "What will be printed? char ch='a'; if(ch>='A' && ch<='Z') Console.WriteLine(\"Upper\"); else Console.WriteLine(\"Lower\");",
-    "options": ["Upper", "Lower", "Error", "No output"],
-    "correct": "Lower"
-  },
-  {
-    "question": "What happens if you try to instantiate a static class in C#?",
-    "options": ["Allowed", "Compile-time error", "Runtime exception", "Produces default object"],
-    "correct": "Compile-time error"
-  },
-  {
-    "question": "Identify error: SqlConnection con = new SqlConnection(); con.ConnectionString=@”xxx”; SqlCommand cmd = new SqlCommand(\"SELECT * FROM tbl\"); SqlDataReader dr = cmd.ExecuteReader();",
-    "options": ["Connection not opened", "SqlCommand syntax wrong", "ExecuteReader() wrong", "No error"],
-    "correct": "Connection not opened"
-  },
-  {
-    "question": "Predict the output: string s=\"Hello\"; Console.WriteLine(s[1]);",
-    "options": ["H", "e", "l", "o"],
-    "correct": "e"
+    "question": "What is the first step to use digital twin technology for an IoT device?",
+    "options": [
+      "A) Purchase a new sensor",
+      "B) Create a virtual model of the physical device",
+      "C) Install Arduino IDE",
+      "D) Write a cloud account password"
+    ],
+    "correct": "B) Create a virtual model of the physical device"
   }
 ]
-
