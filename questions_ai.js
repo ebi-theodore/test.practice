@@ -73,7 +73,7 @@ const quizData =[
     "question": "“Rational agent” refers to",
     "options": [
       "Any software program",
-      "An entity that maximizes expected performance  measure",
+      "An entity that maximizes expected performance measure",
       "An agent that acts randomly",
       "A human being"
     ],
