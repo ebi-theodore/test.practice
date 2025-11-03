@@ -1042,7 +1042,7 @@ const quizData =[
   {
     "question": "Ontological engineering is mainly concerned with:",
     "options": [
-      "Creating structured representations of  concepts and relationships",
+      "Creating structured representations of concepts and relationships",
       "Designing microchips",
       "Debugging algorithms",
       "Installing operating systems"
@@ -1054,7 +1054,7 @@ const quizData =[
     "options": [
       "Sorting data only",
       "Reducing processing speed",
-      "Efficient reasoning and inheritance of  properties",
+      "Efficient reasoning and inheritance of properties",
       "Eliminating logic gates"
     ],
     "correct": "Efficient reasoning and inheritance of properties"
@@ -1422,7 +1422,7 @@ const quizData =[
   {
     "question": "In AI, “mental objects” refer to:",
     "options": [
-      "Internal data structures like goals and  plans",
+      "Internal data structures like goals and plans",
       "Memory units in hardware",
       "Categories of physical objects",
       "Logic gates in processors"
