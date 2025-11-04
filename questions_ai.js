@@ -193,7 +193,7 @@ const quizData =[
     "question": "“General AI” means",
     "options": [
       "AI that is good at gaming",
-      "AI that can perform any intellectual task like a  human",
+      "AI that can perform any intellectual task like a human",
       "AI specialized in one domain",
       "Military AI"
     ],
@@ -974,7 +974,7 @@ const quizData =[
     "options": [
       "Searching from root to leaf",
       "Searching from goal to start",
-      "Searching simultaneously from both start  and goal",
+      "Searching simultaneously from both start and goal",
       "Searching randomly"
     ],
     "correct": "Searching simultaneously from both start and goal"
