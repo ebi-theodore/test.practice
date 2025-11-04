@@ -2130,44 +2130,44 @@ const quizData = [
     "correct": "B) Conjunction"
   },
   {
-    "question": "$p \\lor q$ is false when:",
+    "question": "p ∨ q is false when:",
     "options": [
-      "A) $p$ and $q$ are both false",
-      "B) $p$ is true and $q$ is false",
+      "A) $p and q$ are both false",
+      "B) $p is true and $q$ is false",
       "C) $p$ is false and $q$ is true",
       "D) both are true"
     ],
-    "correct": "A) $p$ and $q$ are both false"
+    "correct": "A) $p and q$ are both false"
   },
   {
-    "question": "$\\neg (p \\land q)$ is equivalent to (De Morgan's Law):",
+    "question": "¬(p ∧ q) is equivalent to:",
     "options": [
-      "A) $\\neg p \\lor \\neg q$",
-      "B) $p \\to q$",
-      "C) $p \\leftrightarrow q$",
-      "D) $\\neg p \\land \\neg q$"
+      "A) ¬p ∨ ¬q",
+      "B) p → q",
+      "C) p ↔ q",
+      "D) ¬p ∧ ¬q"
     ],
-    "correct": "A) $\\neg p \\lor \\neg q$"
+    "correct": "A) ¬p ∨ ¬q"
   },
   {
-    "question": "$p \\to q$ is logically equivalent to:",
+    "question": "p → q is logically equivalent to:",
     "options": [
-      "A) $p \\land q$",
-      "B) $\\neg p \\lor q$",
-      "C) $q \\to p$",
-      "D) $p \\leftrightarrow q$"
+      "A) p ∧ q",
+      "B) ¬p ∨ q",
+      "C) q → p",
+      "D) p ↔ q"
     ],
-    "correct": "B) $\\neg p \\lor q$"
+    "correct": "B) ¬p ∨ q"
   },
   {
-    "question": "The **contrapositive** of $p \\to q$ is:",
+    "question": "The **contrapositive** of  p → q is:",
     "options": [
-      "A) $q \\to p$",
-      "B) $\\neg p \\to \\neg q$",
-      "C) $\\neg q \\to \\neg p$",
-      "D) $p \\leftrightarrow q$"
+      "A) q → p",
+      "B) ¬p → ¬q",
+      "C) ¬q → ¬p",
+      "D) p ↔ q"
     ],
-    "correct": "C) $\\neg q \\to \\neg p$"
+    "correct": "C) ¬q → ¬p"
   },
   {
     "question": "A **tautology** is:",
@@ -2180,7 +2180,7 @@ const quizData = [
     "correct": "C) Always true"
   },
   {
-    "question": "The biconditional $p \\leftrightarrow q$ is true when:",
+    "question": "The biconditional $p ↔ q$ is true when:",
     "options": [
       "A) $p$ and $q$ have different truth values",
       "B) $p$ and $q$ are both true or both false",
@@ -2210,7 +2210,7 @@ const quizData = [
     "correct": "B) An atom or its negation"
   },
   {
-    "question": "$p \\vdash q$ means:",
+    "question": "p ⊢ q means:",
     "options": [
       "A) $p$ semantically entails $q$",
       "B) $p$ syntactically proves $q$",
