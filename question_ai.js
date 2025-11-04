@@ -967,7 +967,7 @@ const quizData = [
       "C) Expand more nodes",
       "D) Fail"
     ],
-    "correct": "B) Expand fewer nodes"
+    "correct": "A) Behave identically"
   },
   {
     "question": "Bidirectional search works by:",
